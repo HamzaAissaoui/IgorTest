@@ -9,11 +9,12 @@
     - create table in postgres (django migrate) 
     - then import and clean csv data
     - then migrate from csv to table when we run docker compose first time.
-    
+
 5. Create endpoint for GET with filters + saves chart in disk + link to chart which should be: {chart endpoint}/chartID
 6. create Chart Endpoint that gets by ID from disk
 7. unit tests
 8. diagram
 
 NOTE:
+    - Don't forget to use libraries asked in github
     - Add env variable that contains Charts directory to use in get chart
