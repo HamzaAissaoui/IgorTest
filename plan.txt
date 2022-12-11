@@ -1,0 +1,19 @@
+1. create postgres microservice // DONE
+2. create django microservice // DONE
+3. add models in django project (models.py)
+    - Data model // DONE
+    - Chart model: // DONE
+        - chartID (int): the name of the file should only be the Id.png // DONE
+
+4. create celery microservice and task to:
+    - create table in postgres (django migrate) 
+    - then import and clean csv data
+    - then migrate from csv to table when we run docker compose first time.
+    
+5. Create endpoint for GET with filters + saves chart in disk + link to chart which should be: {chart endpoint}/chartID
+6. create Chart Endpoint that gets by ID from disk
+7. unit tests
+8. diagram
+
+NOTE:
+    - Add env variable that contains Charts directory to use in get chart
